@@ -1,0 +1,209 @@
+<html>
+	<head>
+		<title>ItVirus.com
+		</title>
+		<meta name=viewport content="initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		body{
+			background:url(../static/logo.png) center bottom no-repeat;
+			background-size: 600px 600px;
+			background-position: fixed;
+			}
+		table{margin-right:10;
+			background-color:gray;
+			align:center;
+			width:100%;
+			height:50;
+			border:1px solid;}
+		th{ text-align:center;
+			
+			border:1px solid gray;}
+		.FS{
+			font-size:100;
+		    }
+		nav{height:60;
+			background-color:black;
+			}
+		a{
+		  display: inline-block;
+		  color:white;
+		  text-decoration: none;
+		  padding:20 20;
+		}
+		a:hover:not(.active) {
+         background-color:grey;
+		 color:black;
+		}
+		.active {
+        background-color:white;
+		 color:black;
+		 font-weight:bolder;
+         }
+		  #footer {  
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: grey;
+			text-align:center;
+        }
+		
+		.fa {
+		  padding:2px;
+		  font-size: 30px;
+		  width: 50px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+		.fa-facebook {
+		  background: white;
+		  color:black;
+		}
+
+		.fa-twitter {
+		  background: white;
+		    color:black;
+		}
+		.fa-google {
+		  background: white;
+		    color:black;
+		}
+
+		.fa-linkedin {
+		 background: white;
+		   color:black;
+		}
+
+		.fa-youtube {
+		background: white;
+		   color:black;
+		}
+
+		.fa-instagram {
+		 background: white;
+		   color:black;
+		}
+		.followus{
+            width: 100%;
+            background: grey;
+			text-align:center;
+			margin-bottom:0;
+		}
+		.leftspace{
+			margin-left:150;}
+		</style>
+	</head>
+	<body>
+		<table text-align="center">
+			<thead>
+				<tr>
+					<th>
+						<div>
+							<img src="../static/logo.png" height="100" width="100"/>
+						</div>
+					</th>
+					<th>
+						<div >
+							<h1 class="FS">ITVirus Institute</h1>
+						</div>
+					</th>
+					<th>
+						<div padding="10">
+							<input width="100" id="Login" href="login.html" type="button" value=" Log In " /><br>
+							<input id="Register" style="margin-top:10" href="register.html" type="button" value="Register" />
+							<script>
+								document.getElementById("Register").onclick=function(){
+								location.href="register.html"}
+								document.getElementById("Login").onclick=function(){
+								location.href="login.html"}
+							</script>
+						</div>
+					</th>
+				<tr>
+			</thead>
+		</table>
+		<nav>
+			<a href="home.html">Home</a>
+			<a href="courses.html" class="active">Courses</a>
+			<a href="contactus.html">Contact us</a>
+			<a href="aboutus.html">About us</a>
+		</nav>
+		<div class="leftspace">
+			<h2>Data Science with AI & AWS Curriculum</h2>
+			<ol>
+				<li>Diving into the World of Data</li>
+				<li>Excel & Advance Excel(Self Learning)</li>
+				<li>Tableau Shelf and Card(Self Learning)</li>
+				<li>SQL</li>
+				<li>Python</li>
+				<li>Analytics with Python</li>
+				<li>Machine Learning</li>
+				<li>R Programming</li>
+				<li>Machine Learning with R (Self Learning)</li>
+				<li>Big Data</li>
+				<li>Deep Learning</li>
+				<li>Natural Language Processing</li>
+				<li>Computer Vision</li>
+				<li>Time Series</li>
+				<li>Recommander System</li>
+				<li>AI using AWS</li>
+			</ol>
+		</div>
+		<div class="leftspace">
+			<h2>Masters in Full-Stack Development Curriculum</h2>
+			<ol>
+				<li>Programming Skills & Logic Building</li>
+				<li>Web Designing</li>
+				<li>Advanced CSS and jQuery</li>
+				<li>Angular 10</li>
+				<li>SQL</li>
+				<li>Core Java</li>
+				<li>Advance Java</li>
+				<li>Spring Boot</li>
+				<li>MongoDB</li>
+				<li>NodeJS & ExpressJS</li>
+				<li>Python Programming</li>
+				<li>Django Framework</li>
+				<li>PHP</li>
+				<li>Ionic Framework</li>
+				<li>AWS</li>
+			</ol>
+		</div>
+		<div class="leftspace">
+			<h2>Data Analytics Curriculum</h2>
+			<ol>
+				<li>Diving into the World of Data</li>
+				<li>Excel & Advance Excel (self-learning)</li>
+				<li>Tableau</li>
+				<li>SQL (self-learning)</li>
+				<li>Python</li>
+				<li>Analytics with Python</li>
+				<li>Machine Learning</li>
+				<li>R Programming</li>
+				<li>Machine Learning with R</li>
+				<li>Domain Exposure</li>
+			</ol>
+		</div>
+		<div class="followus">
+			<p>Follow Us On</p>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-instagram"></a>
+		</div>
+		<div id="footer">
+			<p>Copyright &#169; Itvedant Education Pvt. Ltd. 2012-2022 | Terms | Placement | Privacy | Refund</p>
+		</div>
+	</body>
+</html>

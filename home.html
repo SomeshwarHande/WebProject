@@ -1,0 +1,236 @@
+<html>
+	<head>
+		<title>ItVirus.com
+		</title>
+		<meta name=viewport content="initial-scale=1">
+		<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		body{
+			background:url(../static/logo.png) center bottom no-repeat;
+			background-size: 600px 600px;
+			}
+		.tab{margin-right:10;
+			background-color:gray;
+			align:center;
+			width:100%;
+			height:50;
+			border:1px solid;}
+		.tth{ text-align:center;
+			
+			border:1px solid gray;}
+		.FS{
+			font-size:100;
+		    }
+		nav{height:60;
+			background-color:black;
+			
+			}
+		a{
+		  display: inline-block;
+		  color:white;
+		  text-decoration: none;
+		  padding:20 20;
+		}
+		a:hover:not(.active) {
+         background-color:grey;
+		 color:black;
+		}
+		.active {
+        background-color:white;
+		 color:black;
+		  font-weight:bolder;
+         }
+		 .mySlides {display:none;
+		 margin-left:10%;
+		 margin-right:10%;
+		 height:500;
+		 }
+		  #footer {  
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: grey;
+			text-align:center;
+        }
+		
+		.fa {
+		  padding:2px;
+		  font-size: 30px;
+		  width: 50px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+		.fa-facebook {
+		  background: white;
+		  color:black;
+		}
+
+		.fa-twitter {
+		  background: white;
+		    color:black;
+		}
+		.fa-google {
+		  background: white;
+		    color:black;
+		}
+
+		.fa-linkedin {
+		 background: white;
+		   color:black;
+		}
+
+		.fa-youtube {
+		background: white;
+		   color:black;
+		}
+
+		.fa-instagram {
+		 background: white;
+		   color:black;
+		}
+		.followus{
+            width: 100%;
+            background: grey;
+			text-align:center;
+			margin-bottom:0;
+		}
+		.ots{
+		  opacity:0.9;}
+		  .hh{
+		  font-weight:bold;
+		  font-size:70;
+		  margin-left:150;}
+		</style>
+	</head>
+	<body>
+		<table class="tab" text-align="center">
+			<thead>
+				<tr>
+					<th class="tth">
+						<div>
+							<img src="../static/logo.png" height="100" width="100"/>
+						</div>
+					</th>
+					<th class="tth">
+						<div >
+							<h1 class="FS">ITVirus Institute</h1>
+						</div>
+					</th>
+					<th class="tth">
+						<div padding="10">
+							<input width="100" id="Login" href="login.html" type="button" value=" Log In " /><br>
+							<input id="Register" style="margin-top:10" href="register.html" type="button" value="Register" />
+							<script>
+								document.getElementById("Register").onclick=function(){
+								location.href="register.html"}
+								document.getElementById("Login").onclick=function(){
+								location.href="login.html"}
+							</script>
+						</div>
+					</th>
+				<tr>
+			</thead>
+		</table>
+		<nav>
+			<a href="home.html" class="active">Home</a>
+			<a href="courses.html">Courses</a>
+			<a href="contactus.html">Contact us</a>
+			<a href="aboutus.html">About us</a>
+		
+		</nav>
+						<!--Slidshow-->
+		<div class="w3-content w3-section" style="max-width:100%">
+		  <img class="mySlides" src="../static/slidshow1.png" style="width:80%">
+		  <img class="mySlides" src="../static/slidshow2.png" style="width:80%">
+		  <img class="mySlides" src="../static/slidshow3.png" style="width:80%">
+		</div>
+				<!--Slidshow Script-->
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 2000);
+			}
+		</script>
+		<br>
+		<div>
+			<h1 class="hh">Our Training Process:</h1>
+			<img class="ots" src="../static/ourtrainingprocess.png" width="100%" height="300"/>
+		</div>
+		<br>
+		<div>
+			<h1 class="hh">Association Partners:</h1>
+			<br>
+			<br>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td><img class="ots" src="../static/ap1.png" width="100%" height="300"/></td>
+					<td><img class="ots" src="../static/ap2.png" width="100%" height="300"/></td>
+					<td><img class="ots" src="../static/ap3.png" width="100%" height="300"/></td>
+				</tr>
+			</table>
+		</div>
+		<br>
+			<br>
+			<br>
+			<br>
+		<div>
+			<h1 class="hh">Get Job In:</h1>
+			<br>
+			<br>
+			<br>
+			<br>
+			<table align="center">
+				<tr>
+					<td><img class="ots" src="../static/j1.png" width="300" height="150"/></td>
+					<td><img class="ots" src="../static/j2.png" width="300" height="150"/></td>
+					<td><img class="ots" src="../static/j3.png" width="300" height="150"/></td>
+				</tr>                                                    
+				<tr>                                                     
+					<td><img class="ots" src="../static/j4.png" width="300" height="150"/></td>
+					<td><img class="ots" src="../static/j5.png" width="300" height="150"/></td>
+					<td><img class="ots" src="../static/j6.png" width="300" height="150"/></td>
+				</tr>                                                    
+				<tr>                                                     
+					<td><img class="ots" src="../static/j7.png" width="300" height="150"/></td>
+					<td><img class="ots" src="../static/j8.png" width="300" height="150"/></td>
+					<td><img class="ots" src="../static/j9.png" width="300" height="150"/></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="followus">
+			<p>Follow Us On</p>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-instagram"></a>
+		</div>
+		<div id="footer">
+			<p>Copyright &#169; Itvedant Education Pvt. Ltd. 2012-2022 | Terms | Placement | Privacy | Refund</p>
+		</div>
+	</body>
+</html>
